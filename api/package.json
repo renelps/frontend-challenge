@@ -7,6 +7,8 @@
     "start": "json-graphql-server db.js --p 3333"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.34.2",
+    "axios": "^1.6.8",
     "faker": "^5.5.3",
     "json-graphql-server": "^2.2.3"
   }
