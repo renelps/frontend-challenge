@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { ArrowIcon } from "./arrow-icon";
 import { useState } from "react";
 import { useFilter } from "@/Hooks/useFilter";
-import { PriorityTypes } from "@/types/priority.types";
+import { PriorityTypes } from "@/types/priority-types";
 
 interface FilterByPriorityProps {
 
@@ -77,7 +77,7 @@ export function FilterByPriority(props: FilterByPriorityProps){
         <li onClick={() => handleUpdatePriority(PriorityTypes.NEWS)}>Novidades</li>
         <li onClick={() => handleUpdatePriority(PriorityTypes.BIGGEST_PRICE)}>Preço: Maior - menor</li>
         <li onClick={() => handleUpdatePriority(PriorityTypes.MINOR_PRICE)}>Preço: Menor - maior</li>
-        <li onClick={() => handleUpdatePriority(PriorityTypes.POPULATITY)}>Mais vendidos</li>
+        <li onClick={() => handleUpdatePriority(PriorityTypes.POPULARITY)}>Mais vendidos</li>
       </PriorityFilter>}
     </FilterContainer>
   )
