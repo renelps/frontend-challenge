@@ -6,7 +6,6 @@ export function useLocalStorage<T>(item: string, initialValue: T) {
     if (typeof window === 'undefined') {
       return initialValue;
     }
-
     // Tenta obter o valor do 'localStorage'
     const storedValue = localStorage.getItem(item);
     if (storedValue) {
